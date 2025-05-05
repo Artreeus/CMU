@@ -1,0 +1,195 @@
+/* static banner */
+.notice .static-banner {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+  }
+  
+  
+  .notice .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .notice .banner-content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .banner-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* breadcrumn  */
+  
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  
+  .breadcrumb-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .breadcrumb-link {
+    margin: 0 0.25rem;
+    color: white;
+  }
+  
+  .breadcrumb-separator {
+    margin: 0 0.25rem;
+    color: white;
+  }
+  
+  .breadcrumb-current {
+    margin-left: 0.25rem;
+    color: #ffc107; /* Yellow color for active page */
+  }
+  
+  @media (max-width: 992px) {
+    .notice .static-banner {
+      position: relative;
+      width: 100%;
+      height: 25vh;
+      overflow: hidden;
+    }
+  
+    .notice .banner-content {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+  }
+  
+  /* Event section  */
+
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: none;
+    padding: 1rem;
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.lecture-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #1a3b6e;
+    margin-top: 10px;
+}
+
+.date-badge {
+    background-color: #fff6dd;
+    color: #ffa500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.date-badge i {
+    margin-right: 5px;
+}
+
+.read-more-btn {
+    background-color: #fff;
+    color: #1a3b6e;
+    border: 2px solid #ffc107;
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+
+    color: #1a3b6e;
+}
+
+.card-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 140px;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+
+
+  
+  .pagination {
+      margin-top: 15px;
+      justify-content: center;
+  }
+  
+  .page-link {
+      color: #000;
+      background-color: #fff;
+      border: 1px solid #dee2e6;
+      padding: 0.4rem 0.75rem;
+      font-size: 0.875rem;
+      margin: 0 2px;
+  }
+  
+  .page-item.active .page-link {
+      background-color: #ffc107;
+      border-color: #ffc107;
+      color: #000;
+      font-weight: bold;
+  }
+  
+  .page-link:hover {
+      background-color: #f8f9fa;
+  }
+  
+  @media (max-width: 767.98px) {
+      .search-container .row {
+          gap: 10px;
+      }
+      
+      .notice-text {
+          font-size: 0.9rem;
+      }
+  }
