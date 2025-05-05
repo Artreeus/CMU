@@ -414,6 +414,9 @@
   background-color: transparent !important;
   border: none !important;
 }
+.du-resources-row {
+  transform: scale(1.05);
+}
 
 .du-resources-item {
   flex: 0 0 calc(33.333333% - 30px);
@@ -424,6 +427,12 @@
   background-color: #ffffff !important;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: ease-in-out 200ms;
+
+}
+.du-resources-item:hover {
+  transform: scale(1.05);
+
 }
 
 .du-resources-header {
@@ -452,7 +461,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 }
+
 
 .du-resources-links {
   list-style: none;
