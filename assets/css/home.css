@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 /* university section css  */
 
 .university-section {
@@ -418,6 +426,9 @@
   transform: scale(1.05);
 }
 
+
+
+
 .du-resources-item {
   flex: 0 0 calc(33.333333% - 30px);
   margin: 15px;
@@ -615,6 +626,11 @@
   padding: 20px;
   height: 100%;
 }
+
+.message-card .msg-content{
+  padding: 25px;
+}
+
 .message-title {
   color: #003366;
   font-weight: 600;
