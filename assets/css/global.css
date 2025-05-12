@@ -6,12 +6,16 @@
   transition: all 0.3s ease !important;
   background-color: transparent !important;
 }
+.react-menus > li > a{
+    padding: 16px 34px 16px 34px;
+}
 
 /* header logo */
 
 .logo-container {
   width: 100%;
   text-align: center;
+  height: 85px;
 }
 
 .logo {
@@ -598,6 +602,7 @@ img.w-100 {
   .logo-container {
     width: 100%;
     text-align: left;
+    height: 85px;
 }
 
   .footer-col {
