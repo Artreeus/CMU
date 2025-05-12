@@ -10,6 +10,11 @@
   padding: 16px 34px 16px 34px;
 }
 
+body, html {
+
+    line-height: 1;
+}
+
 .react-inner-menus .react-menus > .has-sub > a:before {
     content: "\33";
     position: absolute;
@@ -39,7 +44,7 @@
 }
 
 .logo-image {
-  height: 80px;
+  height: 75px;
   width: auto;
   margin-top: 8px;
 }
