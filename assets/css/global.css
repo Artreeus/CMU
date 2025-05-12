@@ -6,8 +6,18 @@
   transition: all 0.3s ease !important;
   background-color: transparent !important;
 }
-.react-menus > li > a{
-    padding: 16px 34px 16px 34px;
+.react-menus > li > a {
+  padding: 16px 34px 16px 34px;
+}
+
+.react-inner-menus .react-menus > .has-sub > a:before {
+    content: "\33";
+    position: absolute;
+    font-family: "ElegantIcons";
+    display: block;
+    top: 29%;
+    right: 14px;
+    opacity: 0.5;
 }
 
 /* header logo */
@@ -429,7 +439,6 @@ img.w-100 {
   margin-left: auto;
 }
 
-
 .footer-section .logo-sec .text-medical {
   font-size: 25px;
 }
@@ -603,7 +612,7 @@ img.w-100 {
     width: 100%;
     text-align: left;
     height: 85px;
-}
+  }
 
   .footer-col {
     flex: 0 0 50%;
@@ -624,7 +633,6 @@ img.w-100 {
   .footer-section .container {
     max-width: 540px;
   }
-
 
   .footer-section {
     background-size: 200px auto;
