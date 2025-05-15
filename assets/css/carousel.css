@@ -38,7 +38,7 @@
 .news-img {
     height: 300px;
     overflow: hidden;
-    
+    transform: scale(1.05);
 }
 
 .news-img img {

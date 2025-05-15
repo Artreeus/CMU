@@ -42,7 +42,7 @@ body {
 
 .notice .banner-content {
   position: absolute;
-  top: 70%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -50,7 +50,7 @@ body {
 }
 
 .banner-title {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
   color: #fff;
   margin-bottom: 0.5rem;
@@ -151,3 +151,10 @@ body {
   border-radius: 6px;
   margin-bottom: 20px;
 }
+
+  @media (max-width: 767.98px) {
+    .banner-title {
+  font-size: 2rem;
+ 
+}
+  }

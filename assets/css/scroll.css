@@ -58,6 +58,7 @@ body {
     margin: auto auto;
     border-radius: var(--border-radius);
     transform: scale(1.05);
+
 }
 
 .event-img img {
@@ -67,7 +68,7 @@ body {
     transition: transform 0.3s;
 }
 
-.event-card:hover {
+.event-card:hover .event-img img {
     transform: scale(1.05);
 }
 
