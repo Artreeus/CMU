@@ -1,0 +1,205 @@
+
+
+/* Section Title Styling */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #002147;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.green-underline {
+    height: 4px;
+    width: 70px;
+    background-color: #00c853;
+    margin: 0 auto;
+}
+
+/* Search Box Styling */
+.search-box input {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 4px;
+}
+
+/* Department Card Styling */
+.department-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.department-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.department-image {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.department-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.department-card:hover .department-image img {
+    transform: scale(1.05);
+}
+
+.department-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.department-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #002147;
+    margin-bottom: 15px;
+}
+
+.view-website-btn {
+    display: inline-block;
+    color: #00c853;
+    border: 1px solid #00c853;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.view-website-btn:hover {
+    background-color: #00c853;
+    color: white;
+}
+
+.link-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300c853'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2z'/%3E%3Cpath d='M8 12h8v2H8z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.view-website-btn:hover .link-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2z'/%3E%3Cpath d='M8 12h8v2H8z'/%3E%3C/svg%3E");
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991.98px) {
+    .department-title {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .search-box {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .department-info {
+        padding: 15px;
+    }
+    
+    .view-website-btn {
+        padding: 6px 15px;
+        font-size: 0.75rem;
+    }
+}
+
+/* Custom Bootstrap Modifications */
+
+/* Form Controls */
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 200, 83, 0.25);
+    border-color: #00c853;
+}
+
+.form-select {
+    padding: 0.6rem 2.25rem 0.6rem 0.75rem;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+/* Bootstrap Grid Enhancements */
+@media (min-width: 768px) {
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    
+    .col, [class*="col-"] {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+/* Bootstrap Container Width Adjustments */
+.container {
+    max-width: 1200px;
+}
+
+/* Bootstrap Card Animation Compatible Styles */
+.card {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img-top {
+    border-top-left-radius: calc(0.375rem - 1px);
+    border-top-right-radius: calc(0.375rem - 1px);
+}
+
+/* Better Spacing for Mobile */
+@media (max-width: 767.98px) {
+    .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .my-5 {
+        margin-top: 3rem !important;
+        margin-bottom: 3rem !important;
+    }
+}
+
+/* Accessible Focus Styles */
+button:focus,
+a:focus,
+input:focus,
+select:focus {
+    outline: 2px solid #00c853;
+    outline-offset: 2px;
+}
+
+/* Button Hover Effects */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
