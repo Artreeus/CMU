@@ -436,6 +436,7 @@ img.w-100 {
 
 /* Footer css  */
 
+
 .footer-section {
   background-color: #001933;
   background-image: url("../images/du_image/cmu_logo-removebg-preview.png");
@@ -447,6 +448,7 @@ img.w-100 {
   padding: 0;
   border-top: 2px solid #f46004;
   width: 100%;
+  min-height: 200px;
 }
 
 .footer-section .container {
@@ -459,12 +461,16 @@ img.w-100 {
 }
 
 .footer-section .logo-sec .text-medical {
-  font-size: 25px;
+  font-size: clamp(18px, 4vw, 25px);
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 .footer-section .logo-sec .text-versity {
-  font-size: 25px;
+  font-size: clamp(18px, 4vw, 25px);
   text-align: left;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 .footer-section::before {
@@ -475,7 +481,7 @@ img.w-100 {
   width: 100%;
   height: 100%;
   background-color: #48255f;
-  opacity: 95%;
+  opacity: 0.95;
   z-index: 1;
 }
 
@@ -483,6 +489,7 @@ img.w-100 {
   position: relative;
   z-index: 2;
 }
+
 .footer-section .medical {
   display: inline-block;
   vertical-align: middle;
@@ -490,13 +497,14 @@ img.w-100 {
   font-weight: bold;
   line-height: 1.2;
 }
+
 .footer-section .uni {
   display: inline-block;
   text-align: left;
 }
 
 .footer-main {
-  padding: 40px 0;
+  padding: clamp(20px, 5vh, 40px) 0;
 }
 
 .footer-row {
@@ -504,6 +512,7 @@ img.w-100 {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  gap: 0;
 }
 
 .footer-col {
@@ -514,13 +523,21 @@ img.w-100 {
   flex: 0 0 25%;
   max-width: 25%;
   margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
 .footer-title {
   font-weight: 600;
   margin-bottom: 20px;
   color: white;
-  font-size: 18px;
+  font-size: clamp(16px, 3vw, 18px);
+  word-wrap: break-word;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-links a {
@@ -528,41 +545,53 @@ img.w-100 {
   color: #ffffff;
   text-decoration: none;
   margin-bottom: 10px;
-  transition: color 0.3s;
-  font-size: 14px;
+  transition: all 0.3s ease;
+  font-size: clamp(12px, 2.5vw, 14px);
+  word-wrap: break-word;
+  padding: 5px 0;
 }
 
 .footer-links a:hover {
   color: #f46004;
+  transform: translateX(5px);
 }
 
 .footer-links i {
   margin-right: 10px;
   color: #f46004;
+  width: 16px;
+  text-align: center;
 }
 
 .university-logo {
-  max-width: 200px;
-  height: 80px;
+  max-width: 100px;
+  height: auto;
+  width: 100%;
   margin-bottom: 15px;
-  margin: auto auto;
+  display: block;
+  object-fit: contain;
 }
 
 .contact-info {
   margin-bottom: 0;
   text-align: left;
-  padding-left: 16px;
+  padding-left: 0;
 }
 
 .contact-info p {
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: clamp(12px, 2.5vw, 14px);
+  word-wrap: break-word;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .contact-info i {
   width: 20px;
-  margin-right: 10px;
   color: #f46004;
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .footer-bottom {
@@ -578,50 +607,74 @@ img.w-100 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 
 .footer-bottom-col {
   position: relative;
   width: 100%;
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 auto;
 }
 
 .copyright {
-  font-size: 14px;
+  font-size: clamp(12px, 2.5vw, 14px);
   margin-bottom: 0;
+  color: #ffffff;
 }
 
 .ict-cell {
   color: #f46004;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.ict-cell:hover {
+  color: #ffffff;
 }
 
 .login-links {
   text-align: right;
+  white-space: nowrap;
 }
 
 .login-links a {
   color: white;
   text-decoration: none;
   margin-left: 15px;
-  font-size: 14px;
-  transition: color 0.3s;
+  font-size: clamp(12px, 2.5vw, 14px);
+  transition: all 0.3s ease;
   display: inline-block;
+  padding: 5px 8px;
+  border-radius: 4px;
 }
 
 .login-links a:hover {
   color: #f46004;
+  background-color: rgba(244, 96, 4, 0.1);
 }
 
-/* Responsive Breakpoints - Footer Specific */
+/* Responsive Breakpoints - Enhanced */
+
+/* Extra Large screens */
+@media (min-width: 1400px) {
+  .footer-section .container {
+    max-width: 1320px;
+  }
+}
+
+/* Large screens */
 @media (max-width: 1200px) {
   .footer-section .container {
     max-width: 960px;
   }
+  
+  .footer-section {
+    background-size: 280px auto;
+  }
 }
 
+/* Medium screens */
 @media (max-width: 992px) {
   .footer-section .container {
     max-width: 720px;
@@ -630,36 +683,65 @@ img.w-100 {
   .logo-container {
     width: 100%;
     text-align: left;
-    height: 85px;
+    height: auto;
+    min-height: 85px;
   }
 
   .footer-col {
     flex: 0 0 50%;
     max-width: 50%;
+    margin-bottom: 25px;
   }
 
   .footer-section {
     background-size: 250px auto;
   }
 
-  .footer-section .logo-sec .text-medical,
-  .footer-section .logo-sec .text-versity {
-    font-size: 22px;
+  .footer-main {
+    padding: 30px 0;
   }
 }
 
+/* Small screens and tablets - 2x2 Grid Layout */
 @media (max-width: 768px) {
   .footer-section .container {
     max-width: 540px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .footer-section {
     background-size: 200px auto;
+    background-position: center top;
   }
 
   .footer-section .logo-sec .text-medical,
   .footer-section .logo-sec .text-versity {
-    font-size: 20px;
+    text-align: center;
+  }
+
+  /* 2x2 Grid layout for footer links */
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 8px 15px;
+    margin-bottom: 20px;
+  }
+
+  .footer-links .col-md-4 {
+    display: contents;
+  }
+
+  .footer-links a {
+    margin-bottom: 8px;
+    padding: 6px 0;
+    font-size: 13px;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    gap: 15px;
     text-align: center;
   }
 
@@ -667,7 +749,6 @@ img.w-100 {
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
-    margin-bottom: 10px;
   }
 
   .login-links {
@@ -677,23 +758,36 @@ img.w-100 {
   .login-links a {
     margin: 5px 8px;
   }
+
+  .contact-info {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .contact-info p {
+    justify-content: center;
+  }
 }
 
+/* Extra small screens - Maintain 2x2 grid but adjust spacing */
 @media (max-width: 576px) {
   .footer-section .container {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
+  
   .footer-section .uni {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .footer-col {
     flex: 0 0 100%;
     max-width: 100%;
+    margin-bottom: 20px;
   }
 
   .footer-section {
@@ -702,49 +796,201 @@ img.w-100 {
   }
 
   .footer-main {
-    padding-top: 180px; /* Space for the background logo */
+    padding-top: 50px;
     padding-bottom: 20px;
   }
 
   .footer-title {
     text-align: center;
-    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  /* Maintain 2x2 grid with adjusted spacing */
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 6px 10px;
+    margin-bottom: 15px;
+    text-align: left;
   }
 
   .footer-links a {
-    text-align: center;
+    text-align: left;
+    padding: 5px 0;
+    font-size: 14px;
+    margin-bottom: 5px;
   }
 
   .contact-info p {
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
   }
 
   .university-logo {
     max-width: 160px;
-    height: 70px;
-    display: block;
+    height: auto;
+    margin: 0 auto 15px;
+  }
+
+  .login-links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+  }
+  
+  .footer-section {
+    background-image: none;
   }
 }
 
+/* Very small screens - Compact 2x2 grid */
 @media (max-width: 480px) {
+  .footer-section .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   .footer-main {
-    padding-top: 160px;
+    padding-top: 50px !important;
+    padding-bottom: 15px;
   }
 
   .footer-section {
     background-size: 150px auto;
   }
 
-  .footer-section .logo-sec .text-medical,
-  .footer-section .logo-sec .text-versity {
-    font-size: 18px;
+  .footer-col {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+
+  .footer-title {
+    margin-bottom: 10px;
+  }
+
+  /* Compact 2x2 grid layout */
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 4px 8px;
+    margin-bottom: 12px;
+  }
+
+  .footer-links a {
+    margin-bottom: 4px;
+    padding: 4px 0;
+    font-size: 14px;
   }
 
   .login-links a {
     display: block;
-    margin: 10px 0;
+    margin: 8px 0;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    padding: 10px 0;
+  }
+
+  .footer-bottom-row {
+    gap: 10px;
   }
 }
+
+/* Ultra small screens - Single column fallback */
+@media (max-width: 320px) {
+  .footer-section .container {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .footer-main {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  .footer-section {
+    background-size: 120px auto;
+  }
+
+  .footer-col {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  /* Single column for ultra small screens */
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+
+  .footer-links a {
+    font-size: 11px;
+    padding: 4px 0;
+    text-align: center;
+  }
+
+  .university-logo {
+    max-width: 120px;
+  }
+
+  .login-links a {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .footer-section {
+    background: none !important;
+    color: #000 !important;
+  }
+  
+  .footer-section::before {
+    display: none;
+  }
+  
+  .footer-links a,
+  .login-links a {
+    color: #000 !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .footer-section {
+    border-top: 3px solid #f46004;
+  }
+  
+  .footer-links a:hover,
+  .login-links a:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .footer-links a,
+  .login-links a,
+  .ict-cell {
+    transition: none;
+  }
+  
+  .footer-links a:hover {
+    transform: none;
+  }
+}
+
 
 /* Maintain original responsive styles for other sections */
 @media (max-width: 992px) {
@@ -857,4 +1103,20 @@ img.w-100 {
   .custom-slider-content {
     padding: 0 10px !important;
   }
+
+
+/* Default styles */
+.medical-text {
+  
+  font-size: 1.2rem !important;
+ 
+} 
+
+.university-text {
+ 
+  font-size: 1rem !important; 
+  
+  
+  letter-spacing: 4px;
+}
 }
