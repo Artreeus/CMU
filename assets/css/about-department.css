@@ -1,3 +1,31 @@
+ .react-slider-part,
+  .home-sliders,
+  .single-slide,
+  .slider-img {
+    height: 70vh !important;
+    min-height: 70vh !important;
+  }
+
+  .react-header {
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 9999 !important;
+  transition: all 0.3s ease !important;
+  background-color: white !important;
+}
+
+.react-header:not(.react-sticky) .react-main-menu ul.react-menus > li > a {
+  color: #00306e !important;
+}
+
+.medical-text{
+color: #582c83;
+}
+
+.university-text{
+color: black !important;
+}
+
 .welcome-section {
   padding: 2rem 0;
 }
