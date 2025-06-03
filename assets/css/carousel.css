@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap');
+
+.latest-news-section {
+    padding: 3rem 0;
+    background: #fff;
+}
+
+.section-title {
+    color: #192f59;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ffc107;
+    margin: 15px auto 0;
+}
+
+.news-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-img {
+    height: 300px;
+    overflow: hidden;
+    transform: scale(1.05);
+}
+
+.news-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover .news-img img {
+    transform: scale(1.05);
+}
+
+.news-date {
+    font-size: 14px;
+    color: #ffc107;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.news-date i {
+    margin-right: 5px;
+}
+
+.news-content {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.news-title {
+    color: #192f59;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.4;
+    min-height: 75px;
+}
+
+.bengali-title {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.latest-news-section .read-more{
+    border: 2px solid  #ffc107;
+}
+.latest-news-section .read-more:hover{
+    background: transparent;
+    color: #192f59;
+}
+
+
+
+.read-more i {
+    margin-right: 5px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #ffc107;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 5px;
+    opacity: 0.5;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+.view-all-btn2 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.view-all-btn2 a {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.view-all-btn2 a:hover {
+    background-color: #e0a800;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 767px) {
+    .news-title {
+        min-height: auto;
+    }
+}

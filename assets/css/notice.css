@@ -1,0 +1,247 @@
+/* static banner */
+.notice .static-banner {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  overflow: hidden;
+}
+
+
+.notice .banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.notice .banner-content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.banner-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* breadcrumn  */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.breadcrumb-icon {
+  margin-right: 0.5rem;
+}
+
+.breadcrumb-link {
+  margin: 0 0.25rem;
+  color: white;
+}
+
+.breadcrumb-separator {
+  margin: 0 0.25rem;
+  color: white;
+}
+
+.breadcrumb-current {
+  margin-left: 0.25rem;
+  color: #ffc107; /* Yellow color for active page */
+}
+
+@media (max-width: 992px) {
+  .notice .static-banner {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+  }
+
+  .notice .banner-content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+}
+
+/* notice section  */
+
+.notice-list {
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.notice-board {
+    background-color: #fff;
+    border-radius: 0;
+    padding: 25px;
+    box-shadow: 0px 5px 8px 0px rgba(15, 15, 15, 0.349);
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.notice-title {
+    color: #212529;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(45deg, #491a69 0%, #cc601c 100%);
+    padding: 10px;
+}
+
+.notice-title h5 {
+    margin: 0; /* Remove any default margin */
+    color: #fff;
+}
+
+.refresh-btn {
+    margin: 0; /* Remove any margin around the button */
+}
+
+
+.refresh-btn {
+    background-color: #17a2b8;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e3e4e6;
+    border-radius: 8px;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+.input-with-icon input {
+    padding-left: 35px;
+}
+
+.search-btn svg {
+    margin-right: 5px;
+}
+.search-btn{
+    background-color: #337ab7;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .search-container {
+        padding: 10px;
+    }
+}
+
+.notice-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.notice-text a{
+    font-size: 18px;
+    font-weight: 700;
+    color: #003366 !important;
+    margin-bottom: 4px;
+}
+.notice-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #003366 !important;
+    margin-bottom: 4px;
+}
+
+.notice-date {
+    font-size: 14px;
+    color: #666;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #003366;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 6px 15px;
+    border: 2px solid #003366;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+
+.read-more:hover {
+    background-color: #ffffff;
+    color: #003366;
+}
+
+.read-more::before {
+    content: "+ ";
+    padding-right: 5px;
+}
+
+.pagination {
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.page-link {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.875rem;
+    margin: 0 2px;
+}
+
+.page-item.active .page-link {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+}
+
+.page-link:hover {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 767.98px) {
+    .search-container .row {
+        gap: 10px;
+    }
+    
+    .notice-text {
+        font-size: 0.9rem;
+    }
+    .banner-title {
+  font-size: 2rem;
+    }
+}
