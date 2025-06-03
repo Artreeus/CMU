@@ -60,12 +60,12 @@
     wow.init();
   }
 
-  if ($('.counter').length) {
-    $('.counter').counterUp({
-      delay: 10,
-      time: 2000
-    });
-  }
+  // if ($('.counter').length) {
+  //   $('.counter').counterUp({
+  //     delay: 10,
+  //     time: 2000
+  //   });
+  // }
 
   // magnificPopup init
   var imagepopup = $('.image-popup');
